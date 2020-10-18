@@ -24,6 +24,11 @@ html, body, header, div.hero-header {
     width: 100%;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 header {
     /* height: 100vh; */
     background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
@@ -144,10 +149,14 @@ header {
 }
 
 .features-block {
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
 
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }
 
 .feature-item {
@@ -183,6 +192,7 @@ header {
 }
 
 .project-image {
+    width: 450px;
     transition: all .3s;
 }
 
