@@ -209,6 +209,8 @@ header {
 
 .project-image {
     width: 450px;
+    margin-right: 20px;
+
     transition: all .3s;
 }
 
